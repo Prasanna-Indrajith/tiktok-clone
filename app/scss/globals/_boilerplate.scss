@@ -1,0 +1,44 @@
+@use '../util' ;
+
+html {
+    font-size: 100%;
+}
+
+*,
+*::after,
+*::before {
+    // box-sizing: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    // padding: 0;
+
+}
+
+body {
+    font-family: util.$font;
+    background-color: var(--background-color-dark);
+    color: rgba(255, 255, 255, .9);
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizespeed;
+    
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--background-color-light1);
+    }
+
+}
+
+* {
+    &::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    // &::-webkit-scrollbar-track {
+    //     // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    // }
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 5px;
+        
+        transition: background-color 0.35s ease;
+    }
+}

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Tiktok website clone" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiktok</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-item-container">
+        <div class="left-container">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 118 30"
+              width="118"
+              height="42"
+              alt="TikTok"
+            >
+              <path
+                fill="#25F4EE"
+                d="M9.875 11.842v-1.119A8.836 8.836 0 008.7 10.64c-4.797-.006-8.7 3.9-8.7 8.707a8.706 8.706 0 003.718 7.135A8.675 8.675 0 011.38 20.55c0-4.737 3.794-8.598 8.495-8.707z"
+              ></path>
+              <path
+                fill="#25F4EE"
+                d="M10.087 24.526c2.14 0 3.89-1.707 3.966-3.83l.007-18.968h3.462a6.78 6.78 0 01-.109-1.202h-4.727l-.006 18.968a3.978 3.978 0 01-3.967 3.83 3.93 3.93 0 01-1.846-.46 3.949 3.949 0 003.22 1.662zM23.992 8.166V7.111a6.506 6.506 0 01-3.584-1.067 6.572 6.572 0 003.584 2.122z"
+              ></path>
+              <path
+                fill="#FE2C55"
+                d="M20.41 6.044a6.54 6.54 0 01-1.617-4.316h-1.265a6.557 6.557 0 002.881 4.316zM8.707 15.365a3.98 3.98 0 00-3.974 3.976c0 1.528.87 2.858 2.134 3.523a3.937 3.937 0 01-.754-2.321 3.98 3.98 0 013.973-3.976c.41 0 .805.07 1.176.185v-4.833a8.852 8.852 0 00-1.176-.083c-.07 0-.134.006-.204.006v3.708a3.999 3.999 0 00-1.175-.185z"
+              ></path>
+              <path
+                fill="#FE2C55"
+                d="M23.992 8.166v3.676a11.25 11.25 0 01-6.579-2.116v9.621c0 4.802-3.903 8.714-8.706 8.714a8.669 8.669 0 01-4.99-1.579 8.69 8.69 0 006.37 2.781c4.796 0 8.706-3.906 8.706-8.714v-9.621a11.25 11.25 0 006.579 2.116v-4.73c-.479 0-.939-.052-1.38-.148z"
+              ></path>
+              <path
+                fill="white"
+                d="M17.413 19.348V9.726a11.25 11.25 0 006.58 2.116V8.166a6.572 6.572 0 01-3.584-2.122 6.611 6.611 0 01-2.887-4.316h-3.463l-.006 18.968a3.978 3.978 0 01-3.967 3.83 3.99 3.99 0 01-3.225-1.656 3.991 3.991 0 01-2.134-3.523A3.98 3.98 0 018.7 15.372c.409 0 .805.07 1.176.185v-3.708c-4.702.103-8.496 3.964-8.496 8.701 0 2.29.888 4.373 2.338 5.933a8.669 8.669 0 004.989 1.58c4.797 0 8.706-3.913 8.706-8.715zM30.048 8.179h14.775l-1.355 4.232h-3.832v15.644h-4.778V12.41l-4.804.006-.006-4.238zM69.032 8.179h15.12l-1.354 4.232h-4.172v15.644h-4.784V12.41l-4.803.006-.007-4.238zM45.73 14.502h4.733v13.553h-4.708l-.026-13.553zM52.347 8.128h4.733v9.257l4.689-4.61h5.647l-5.934 5.76 6.643 9.52h-5.213l-4.433-6.598-1.405 1.362v5.236h-4.733V8.128h.006zM102.49 8.128h4.734v9.257l4.688-4.61h5.647l-5.934 5.76 6.643 9.52h-5.206l-4.433-6.598-1.405 1.362v5.236h-4.734V8.128zM48.093 12.954a2.384 2.384 0 10-.002-4.771 2.384 2.384 0 00.002 4.771z"
+              ></path>
+              <path
+                fill="#25F4EE"
+                d="M83.544 19.942a8.112 8.112 0 017.474-8.087 8.748 8.748 0 00-.709-.026c-4.478 0-8.106 3.631-8.106 8.113 0 4.482 3.628 8.113 8.106 8.113.21 0 .498-.013.71-.026-4.178-.326-7.475-3.823-7.475-8.087z"
+              ></path>
+              <path
+                fill="#FE2C55"
+                d="M92.858 11.83c-.217 0-.505.012-.715.025a8.111 8.111 0 017.467 8.087 8.111 8.111 0 01-7.467 8.087c.21.02.498.026.715.026 4.478 0 8.106-3.631 8.106-8.113 0-4.482-3.628-8.113-8.106-8.113z"
+              ></path>
+              <path
+                fill="white"
+                d="M91.58 23.887a3.94 3.94 0 01-3.94-3.945 3.94 3.94 0 117.882 0c0 2.18-1.77 3.945-3.941 3.945zm0-12.058c-4.477 0-8.105 3.631-8.105 8.113 0 4.482 3.628 8.113 8.106 8.113 4.477 0 8.106-3.631 8.106-8.113 0-4.482-3.629-8.113-8.106-8.113z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <div class="center-container">
+          <form action="#">
+            <input type="text" placeholder="Search accounts and videos" />
+            <button type="submit">
+              <div class="search-btn-container">
+                <svg
+                  width="24"
+                  data-e2e=""
+                  height="24"
+                  viewBox="0 0 48 48"
+                  fill="rgba(255, 255, 255, .34)"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22 10C15.3726 10 10 15.3726 10 22C10 28.6274 15.3726 34 22 34C28.6274 34 34 28.6274 34 22C34 15.3726 28.6274 10 22 10ZM6 22C6 13.1634 13.1634 6 22 6C30.8366 6 38 13.1634 38 22C38 25.6974 36.7458 29.1019 34.6397 31.8113L43.3809 40.5565C43.7712 40.947 43.7712 41.5801 43.3807 41.9705L41.9665 43.3847C41.5759 43.7753 40.9426 43.7752 40.5521 43.3846L31.8113 34.6397C29.1019 36.7458 25.6974 38 22 38C13.1634 38 6 30.8366 6 22Z"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
+        <div class="right-container">
+          <div class="">
+            <a href="#">
+              <div>
+                <svg
+                  class="tiktok-qeydvm-StyledPlusIcon e18d3d944"
+                  width="1em"
+                  data-e2e=""
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 2.5C7.58579 2.5 7.25 2.83579 7.25 3.25V7.25H3.25C2.83579 7.25 2.5 7.58579 2.5 8C2.5 8.41421 2.83579 8.75 3.25 8.75H7.25V12.75C7.25 13.1642 7.58579 13.5 8 13.5C8.41421 13.5 8.75 13.1642 8.75 12.75V8.75H12.75C13.1642 8.75 13.5 8.41421 13.5 8C13.5 7.58579 13.1642 7.25 12.75 7.25H8.75V3.25C8.75 2.83579 8.41421 2.5 8 2.5Z"
+                  ></path>
+                </svg>
+                <span>Upload</span>
+              </div></a
+            >
+          </div>
+          <div class="">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 22 22"
+                width="1em"
+                height="1em"
+              >
+                <path
+                  fill="black"
+                  d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+                ></path>
+                <path
+                  fill="url(#eh-header-logo_svg__paint0_linear_1104_31608)"
+                  d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+                ></path>
+                <path
+                  fill="url(#eh-header-logo_svg__paint1_radial_1104_31608)"
+                  fill-opacity="0.6"
+                  d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+                ></path>
+                <path
+                  fill="url(#eh-header-logo_svg__paint2_radial_1104_31608)"
+                  fill-opacity="0.6"
+                  d="M0 22V11C0 4.925 4.925 0 11 0s11 4.925 11 11v11H0zm19.25-2.75V11A8.25 8.25 0 007.055 3.753a8.243 8.243 0 018.09 3.632A5.479 5.479 0 0116.5 11v8.25h2.75zM7.946 6.425a5.5 5.5 0 00-5.196 5.492v7.333H5.5V11c0-1.908.971-3.589 2.446-4.575zm5.008 2.64A2.75 2.75 0 008.25 11v8.25h5.5v-7.333c0-1.044-.291-2.02-.796-2.852z"
+                ></path>
+                <defs>
+                  <radialGradient
+                    id="eh-header-logo_svg__paint1_radial_1104_31608"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientTransform="rotate(137.121 8.563 5.382) scale(19.105)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF00E5"></stop>
+                    <stop
+                      offset="1"
+                      stop-color="#FF00E5"
+                      stop-opacity="0"
+                    ></stop>
+                  </radialGradient>
+                  <radialGradient
+                    id="eh-header-logo_svg__paint2_radial_1104_31608"
+                    cx="0"
+                    cy="0"
+                    r="1"
+                    gradientTransform="rotate(-40.03 25.148 1.387) scale(16.3248)"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#00FFFF"></stop>
+                    <stop
+                      offset="1"
+                      stop-color="#000AFF"
+                      stop-opacity="0"
+                    ></stop>
+                  </radialGradient>
+                  <linearGradient
+                    id="eh-header-logo_svg__paint0_linear_1104_31608"
+                    x1="0"
+                    x2="22"
+                    y1="0"
+                    y2="22"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FF698D" stop-opacity="0.806"></stop>
+                    <stop offset="0.318" stop-color="#926BFF"></stop>
+                    <stop
+                      offset="0.538"
+                      stop-color="#294FFF"
+                      stop-opacity="0.85"
+                    ></stop>
+                    <stop offset="0.807" stop-color="#0075FF"></stop>
+                    <stop offset="1" stop-color="#00D1FF"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <span class="hover-label">Create Effects</span>
+          </div>
+          <div class="">
+            <a href="#">
+              <svg
+                class="tiktok-y48l9g-StyledIcon e1nx07zo1"
+                width="1em"
+                data-e2e=""
+                height="1em"
+                viewBox="0 0 48 48"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M2.17877 7.17357C2.50304 6.45894 3.21528 6 4.00003 6H44C44.713 6 45.372 6.37952 45.7299 6.99615C46.0877 7.61278 46.0902 8.37327 45.7365 8.99228L25.7365 43.9923C25.3423 44.6821 24.5772 45.0732 23.7872 44.9886C22.9972 44.9041 22.3321 44.3599 22.0929 43.6023L16.219 25.0017L2.49488 9.31701C1.97811 8.72642 1.85449 7.88819 2.17877 7.17357ZM20.377 24.8856L24.531 38.0397L40.5537 10H8.40757L18.3918 21.4106L30.1002 14.2054C30.5705 13.9159 31.1865 14.0626 31.4759 14.533L32.5241 16.2363C32.8136 16.7066 32.6669 17.3226 32.1966 17.612L20.377 24.8856Z"
+                ></path>
+              </svg>
+            </a>
+            <span class="hover-label">Message</span>
+          </div>
+          <div class="">
+            <a href="#">
+              <svg
+                class="tiktok-1g0p6jv-StyledInboxIcon e18kkhh41"
+                width="1em"
+                data-e2e=""
+                height="1em"
+                viewBox="0 0 32 32"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.0362 21.3333H18.5243L15.9983 24.4208L13.4721 21.3333H7.96047L7.99557 8H24.0009L24.0362 21.3333ZM24.3705 23.3333H19.4721L17.2883 26.0026C16.6215 26.8176 15.3753 26.8176 14.7084 26.0026L12.5243 23.3333H7.62626C6.70407 23.3333 5.95717 22.5845 5.9596 21.6623L5.99646 7.66228C5.99887 6.74352 6.74435 6 7.66312 6H24.3333C25.2521 6 25.9975 6.7435 26 7.66224L26.0371 21.6622C26.0396 22.5844 25.2927 23.3333 24.3705 23.3333ZM12.6647 14C12.2965 14 11.998 14.2985 11.998 14.6667V15.3333C11.998 15.7015 12.2965 16 12.6647 16H19.3313C19.6995 16 19.998 15.7015 19.998 15.3333V14.6667C19.998 14.2985 19.6995 14 19.3313 14H12.6647Z"
+                ></path>
+              </svg>
+            </a>
+            <span class="hover-label">Inbox</span>
+          </div>
+          <div class="profile-icon">
+            <a href="#"> <img src="" alt="profile-icon" /> </a>
+            <div class="profile-menu active">
+              <div class="profile-menu-upper">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                          />
+                        </svg>
+                        <span>View profile</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"
+                          />
+                        </svg>
+
+                        <span>Get coins</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 010 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                          />
+                        </svg>
+
+                        <span>Settings</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"
+                          />
+                        </svg>
+
+                        <span>English</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z"
+                          />
+                        </svg>
+
+                        <span>Feedback and help</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z"
+                          />
+                        </svg>
+
+                        <span>Keyboard shortcuts</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                          />
+                        </svg>
+
+                        <span>Dark mode</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="profile-menu-down">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+                          />
+                        </svg>
+                        <span>Log out</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="side-menu-bar">
+        <section>
+          <ul>
+            <li>
+              <a href="#" class="active">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    />
+                  </svg>
+                  <span>For You</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                    />
+                  </svg>
+
+                  <span>Following</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"
+                    />
+                  </svg>
+
+                  <span>LIVE</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h4 class="side-menu-titles">Suggested accounts</h4>
+          <ul class="suggested-acc-block">
+            <li>
+              <a href="#">
+                <div>
+                  <img
+                    src="picture/dp.png"
+                    class="profile-image"
+                    alt=""
+                    data-story="true"
+                  />
+                  <div>
+                    <h3 class="verified">fauziazzhar</h3>
+                    <h5>Fauzi Azzhar</h5>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <span class="see-more"><a href=""> See more</a></span>
+        </section>
+        <section>
+          <h4 class="side-menu-titles">Following accounts</h4>
+          <ul class="suggested-acc-block"></ul>
+          <ul></ul>
+          <span class="see-more"><a href="">See more</a></span>
+        </section>
+        <section>
+          <h4 class="side-menu-title">Discover</h4>
+          <ul id="discover">
+            <li><a href="">#Oscar</a></li>
+            <li><a href="">#SpeedRamp</a></li>
+            <li><a href="">@user</a></li>
+            <li><a href="">#Golumo</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </section>
+        <section></section>
+      </div>
+      <main>
+        <h1>video loaded here</h1>
+      </main>
+    </div>
+    <script src="app/js/index.js"></script>
+  </body>
+</html>
