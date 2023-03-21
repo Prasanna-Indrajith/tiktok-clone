@@ -1,8 +1,12 @@
 :root {
     --background-color-dark: rgb(18, 18, 18);
-    --background-color-light1: rgb(50, 50, 50);
-    --background-color-light2: rgb(80, 80, 80);
-    --background-color-light: rgba(255, 255, 255, 0.9);
+    --background-color-light1: rgba(100, 100, 100, 0.2);
+    --background-color-light2: rgba(100, 100, 100, 0.4);
+
+    --hover-item-bg-dark: rgb(54, 54, 54);
+    
+    --text-color-light: rgb(246, 246, 246);
+    --text-color-dark: rgb(142, 142, 142);
 
     --accent-color: rgba(255, 59, 92, 1);
 }
