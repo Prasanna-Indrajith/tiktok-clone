@@ -69,3 +69,15 @@ function addCodeBlocktoSite(x, y) {
 // if (suggestedAccBlock.children.length > 5) {
 
 // }
+
+function activeClassControll(e) {
+  let currentLikeCount = parseInt(e.parentNode.children[1].innerText);
+
+  e.classList.toggle("active");
+
+  if (e.classList[2] == "active") {
+    e.parentNode.children[1].innerText = currentLikeCount + 1;
+  } else {
+    e.parentNode.children[1].innerText = currentLikeCount - 1;
+  }
+}
