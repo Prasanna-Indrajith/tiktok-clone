@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html",
-    "ok": "sass --watch ./app/scss/style.scss:./dist/style.css"
+    "dev": "sass --watch ./app/scss/style.scss:./dist/style.css"
   },
   "repository": {
     "type": "git",
