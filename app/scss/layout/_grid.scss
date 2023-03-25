@@ -1,5 +1,30 @@
 @use "../globals";
 
+//
+//  When it is small screen
+//
+
+@media (max-width: 800px) {
+  .sm-display-none {
+    display: none !important;
+  }
+}
+
+@mixin small-display($element) {
+  @media (max-width: 800px) {
+    .sm-display-none {
+      display: none !important;
+    }
+    #{$element} {
+      @content;
+    }
+  }
+}
+
+// @include small-display('a'){
+//   color: red;
+// }
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -129,6 +154,10 @@ nav {
           &:hover {
             background-color: var(--background-color-light2);
           }
+        }
+
+        @media (max-width: 800px) {
+          display: none;
         }
       }
     }
@@ -295,7 +324,7 @@ nav {
     height: calc(100vh - 60px);
     // background-color: red;
     overflow-y: auto;
-    width: 356px;
+    max-width: 356px;
 
     &:hover {
       &::-webkit-scrollbar-thumb {
@@ -343,12 +372,18 @@ nav {
         li {
           list-style: none;
 
+          @include small-display(a) {
+            width: max-content !important;
+            border-radius: 5px;
+            padding: 0.35rem !important;
+          }
+
           a {
             display: inline-block;
             padding: 0.35rem 1rem;
             width: 100%;
-            @extend %a-link-hover;
             color: var(--text-color-dark);
+            @extend %a-link-hover;
 
             div {
               @extend %flex-center;

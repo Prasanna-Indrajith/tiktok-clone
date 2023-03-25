@@ -46,7 +46,7 @@ for (let i = 0; i < users.length; i++) {
                 alt=""
                 data-story="${user.story}"
                 />
-                <div>
+                <div class="sm-display-none">
                 <h3 class="${user.verified}">${user.userName}</h3>
                 <h5>${user.name}</h5>
                 </div>
