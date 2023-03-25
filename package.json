@@ -1,0 +1,26 @@
+{
+  "name": "Tiktok-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "ok": "sass --watch ./app/scss/style.scss:./dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasanna-Indrajith/tiktok-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prasanna-Indrajith/tiktok-clone/issues"
+  },
+  "homepage": "https://github.com/Prasanna-Indrajith/tiktok-clone#readme",
+  "devDependencies": {
+    "sass": "^1.60.0"
+  },
+  "dependencies": {}
+}
